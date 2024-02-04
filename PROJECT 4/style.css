@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans&family=Poppins:ital,wght@0,300;1,300;1,500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: aliceblue;
+}
+
+.profile{
+    max-width: 370px;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 23px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.profile::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 150px;
+    width: 100%;
+    background-color: #4070f4;
+    border-radius: 24px 24px 0 0;
+}
+
+.img{
+    position: relative;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background-color: rgb(70, 70, 243);
+    padding: 3px;
+
+}
+ 
+img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    margin-bottom: 10px;
+}
+
+.profile .text-data{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #333;
+}
+
+.text-data .name{
+    font-size: 23px;
+    font-weight: 500;
+}
+.text-data .job{
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.profile .media-buttons{
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.media-buttons .link{
+    text-decoration: none;
+    background-color: #4070f4;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin: 0 8px;
+    height: 34px;
+    width: 34px;
+    font-size: 18px;
+}
+
+.profile .buttons{
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.buttons .button{
+    border-radius: 24px;
+    border: none;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 400;
+    padding: 8px 24px;
+    margin: 0 10px;
+    background-color: #4070f4;
+    cursor: pointer;
+    transition: all 0.3 ea;
+}
+
+.buttons .button:hover{
+    background-color: #0e4bf1;
+}
+
+
+.profile .analytics {
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.analytics .data{
+    display: flex;
+    align-items: center;
+    color: #333;
+    padding: 0 20px;
+    border-right: 2px solid #e7e7e7;
+}
+
+.data i{
+    font-size: 18px;
+    margin-right: 6px;
+}
+
+.data:last-child{
+    border-right: none;
+}
