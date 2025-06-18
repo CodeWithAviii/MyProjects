@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Arsenal+SC:ital,wght@0,400;0,700;1,400;1,700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Arsenal SC", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    box-sizing: border-box;
+}
+/* Navigation bar */
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: darkgrey;
+}
+.container .logo h1{
+    font-size: 1.6rem;
+    margin-left: 1rem;
+}
+.container ul{
+    list-style: none;
+    display: flex;
+    gap: 1.6rem;
+   margin: 1rem auto;
+}
+
+.container ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.4rem;
+}
+
+.container ul li a:hover{
+   color: rgb(84, 108, 112);
+   text-decoration: underline;
+}
+.container .srch{
+    margin-right:1rem ;
+}
+.container .srch input{
+    border-radius: 4px;
+    border: #a39292;
+    padding: 1vmin;
+}
+
+.first{
+    position: relative;
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: rgb(0, 0, 0);
+}
+.first::before{
+    content: "";
+    position: absolute;
+    height: 80vh;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.8;
+    background: url('https://cdn.pixabay.com/photo/2016/11/18/16/49/books-1835753_1280.jpg') no-repeat center center/cover;
+}
+.first h1{
+    font-size: 3rem;
+    margin: 0.5rem auto;
+
+}
+.first p{
+    width: 25vw;
+    line-height: 1.2rem;
+    font-size: 3vmin;
+    gap: 1rem;
+    color: rgb(0, 0, 0);
+}
+
+.btn{
+    padding: 1rem;
+}
+
+.btn button{
+    padding: 10px;
+    border-radius: 4px;
+    border: none;
+    background-color: #981f1f;
+    cursor: pointer;
+}
+button:hover{
+    background-color: #601515;
+    color: white;
+}
+
+.books{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    background: #eee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.books h2{
+    text-align: center;
+    font-size: 4rem;
+}
+
+.books .books-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 60vh;
+    gap: 3rem;
+}
+
+.books-container .book-card{
+    width: 15vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: #bababa;
+    border-radius: 5px;
+    padding: 8px;
+    box-shadow: 10px 10px 5px #a39292;
+}
+
+.books-container .book-card img{
+    object-fit: contain;
+   height: 20vh;
+   width: 15vw;
+   border: 2px solid darkgrey;
+   padding: 5px 5px;
+   border: none;
+}
+
+.book-card h3, p,h5{
+    font-size: 1vmax;
+    font-weight: 1000;
+}
+
+.images{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #eee;
+}
+.images h1{
+    text-align: center;
+    font-size: 3rem;
+}
+
+.images .gallery{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.gallery .left{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.gallery .left img{
+    height: 45vh;
+    width: 30vw;
+    margin: 5px auto;
+}
+
+.gallery .right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.right img{
+    height: 91vh;
+    width: 100%;
+    margin: 1rem;
+}
+
+.images .text{
+    height: 35vh;
+    width: 55vw;
+}
+.text h2{
+    text-align: center;
+    font-size: 3rem;
+}
+
+.text p{
+    font-size: 1.2rem;
+}
+
+.contact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 60vh;
+    background-color: #eee;
+}
+
+.contact h1{
+    text-align: center;
+    font-size: 3rem;
+}
+.contact .page{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.page input{
+    margin: 10px 10px;
+    padding: 1rem 15rem;
+    border: 2px solid black;
+    border-radius: 5px;
+    background: rgba(0, 0, 0, 0.053);
+}
+
+.contact .btn{
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: rgb(102, 102, 102);
+    padding: 1rem 1rem;
+}
+
+.contact .btn:hover{
+    background-color: rgb(71, 69, 69);
+}
+
+.footer{
+    display: flex;
+    align-items: center;
+    background-color: #8f8f8f;
+}
+.footer .links{
+    display: flex;
+    margin: 3rem auto;
+    gap: 5rem;
+}
+.links ul li{
+    list-style: none;
+    padding: auto 3rem;
+    cursor: pointer;
+}
+.right-f{
+    margin-right: 1rem;
+}
+.left-f{
+    margin-left: 1rem;
+}

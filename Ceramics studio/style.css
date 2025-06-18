@@ -1,0 +1,355 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Merriweather", serif;
+
+}
+
+/* Navbar styling */
+.navbar {
+    width: 100%;
+    height: 7vh;
+    background-color: #B0BC98;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+/* Heading styling */
+.heading {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.heading h3 {
+    margin: 0;
+}
+
+/* Navigation menu styling */
+.navbar ul {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 2rem;
+}
+
+.navbar ul li {
+    list-style: none;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    margin-top: 4px;
+}
+.navbar ul li a:hover{
+   color: #a84242;
+}
+.navbar ul input{
+    border: none;
+    border-radius: 4px;
+    border: 2px solid rgba(0, 0, 0, 0.721);
+    background: rgba(0, 0, 0, 0.053)
+}
+
+/* hero  Section */
+.hero{
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url('https://tz47gb.yourbrand.studio/files/dynamicContent/sites/tz47gb/images/en/webpage_11/ls0ljcz6/element_210/rwdMode_1/2400x836/main.webp') center center no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+.hero .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.hero .heading{
+    font-size: 4rem;
+}
+
+.hero .content {
+    width: 50vw;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    font-family:sans-serif;
+}
+
+.hero .btn{
+    padding: 8px;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: #a43b3b;
+    cursor: pointer;
+    font-family: cursive;
+    font-size: 1rem;
+    font-weight: bold;
+}
+.btn:hover{
+    background-color:#803737;
+ color: white;
+}
+
+/* Shop Section */
+
+.shop{
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.shop .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container h2{
+    font-size: 3rem;
+    font-weight: 500;
+}
+.shop .container .cards{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 59vh;
+    width: 49vw;
+    gap: 5rem;
+}
+
+.cards #card{
+    background: rgb(236, 236, 236);
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.cards img{
+    height: 43vh;
+    width: 20vw;
+}
+#card{
+    height: 58vh;
+    width: 100%;
+    text-align: center;
+}
+
+#card p{
+    margin-top: 1rem;
+}
+
+/* About Section */
+.about{
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background:  lightgray;
+}
+
+.about .container{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 50%;
+    padding: 7rem;
+}
+
+.about .container h2{
+    font-size: 4rem;
+    font-weight: 600;
+}
+
+.about .container p{
+    width: 30vw;
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}
+
+.about .container .btn{
+  width: 8vw;
+  text-align: center;
+  padding: 0.5rem;
+  border: 2px solid black;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.about .img{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-right:4rem;
+}
+.about .img img{
+    height:15vh;
+    height: 25vw;
+}
+
+/* Employees Section */
+.employee {
+    height: 80vh;
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.info h2{
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.emp {
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.emp img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+.emp h4 {
+    margin: 10px 0 5px;
+    font-size: 1.2em;
+}
+.emp p {
+    margin: 0;
+    padding: 0 20px;
+    font-size: 0.9em;
+    color: #555;
+}
+
+/* gallery section */
+.gallery{
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #727272;
+}
+.gallery .container {
+    display: flex;
+    justify-content: space-between;
+    height: auto;
+    width: 50vw;
+}
+
+
+
+.container .left{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 50%;
+
+}
+
+.container .left img{
+    height: 75vh;
+    width: 30vw;
+}
+
+.container .right {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.container .right .first img{
+    height: 36vh;
+    width: 18vw;
+}
+
+.container .right .second img{
+    height: 36vh;
+    width: 18vw;
+}
+
+/* footer section */
+footer{
+    background: #161515;
+    color: white;
+    display: flex;
+    height: 16vh;
+}
+
+.address{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 10%;
+    margin-left: 1rem;
+}
+ .links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    gap: 3rem;
+}
+
+.links p a{
+    color: white;
+    text-decoration: none;
+}
+
+.links p a:hover{
+    color: #555;
+}
+
+.socialmedia{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 10%;
+}
+
+.socialmedia ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+
+}
+.socialmedia ul li a{
+    color: white;
+    text-decoration: none;
+   font-size: 1.5rem;
+
+}
+
+.socialmedia ul li a:hover{
+    color: #555;
+}
+

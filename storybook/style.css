@@ -1,0 +1,149 @@
+/* styles.css */
+body {
+    font-family: 'Arial, sans-serif';
+    background: linear-gradient(to right, #fdbb2d, #22c1c3);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: #000; /* Set text color to black */
+}
+
+header {
+    width: 100%;
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.navbar h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+main {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.storybook {
+    width: 80%;
+    max-width: 800px;
+    height: 80%;
+    border: 2px solid #333;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    overflow: hidden;
+    position: relative;
+    background: #fff;
+    perspective: 1000px;
+}
+
+.page {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    opacity: 0;
+    transition: left 1s ease, opacity 1s ease, transform 1s ease;
+    transform-origin: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    color: #000; /* Ensure text color is black */
+}
+
+#page1 { background: linear-gradient(to right, #ff7e5f, #feb47b); }
+#page2 { background: linear-gradient(to right, #6a11cb, #2575fc); }
+#page3 { background: linear-gradient(to right, #43cea2, #185a9d); }
+#page4 { background: linear-gradient(to right, #ff6a00, #ee0979); }
+#page5 { background: linear-gradient(to right, #56ab2f, #a8e063); }
+
+.page.active {
+    left: 0;
+    opacity: 1;
+    transform: rotateY(0deg);
+}
+
+.page .content {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+.page .character {
+    width: 100px;
+    height: 100px;
+    background: url('character.png') no-repeat center center;
+    background-size: contain;
+    animation: moveCharacter 2s infinite alternate;
+    margin: 20px auto;
+}
+
+@keyframes moveCharacter {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(20px);
+    }
+}
+
+.navigation {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+.navigation button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    border: none;
+    background: #333;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 10px;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.navigation button:hover {
+    background: #555;
+    transform: scale(1.1);
+}
+
+footer {
+    width: 100%;
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .storybook {
+        width: 95%;
+        height: 70%;
+    }
+
+    .page .content {
+        padding: 10px;
+    }
+
+    .navigation button {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+}
