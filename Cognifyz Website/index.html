@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Developer Internship - Cognifyz Technologies</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@0.5.21/dist/vanta.net.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header with Navigation -->
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <i class="fas fa-code"></i>
+                <span>Cognifyz</span>
+            </div>
+            <div class="nav-links">
+                <a href="#overview">Overview</a>
+                <a href="#highlights">Benefits</a>
+                <a href="#qualifications">Qualifications</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section with Three.js Background -->
+    <section class="hero">
+        <div id="vanta-canvas"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>Web Developer Internship Opportunities at Cognifyz Technologies</h1>
+            <p>Launch your tech career with hands-on experience, expert mentorship, and real-world projects at one of the fastest growing tech companies.</p>
+            <div class="cta-buttons">
+                <a href="#apply" class="btn btn-primary pulse">Apply Now</a>
+                <a href="#overview" class="btn btn-secondary">Learn More</a>
+            </div>
+            
+            <div class="tech-container">
+                <span class="tech-badge">React</span>
+                <span class="tech-badge">Node.js</span>
+                <span class="tech-badge">JavaScript</span>
+                <span class="tech-badge">HTML5</span>
+                <span class="tech-badge">CSS3</span>
+                <span class="tech-badge">MongoDB</span>
+                <span class="tech-badge">AWS</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Overview Section -->
+    <section id="overview" class="overview">
+        <h2 class="section-title">About the Program</h2>
+        <p class="section-subtitle">A comprehensive internship designed to transform students into industry-ready developers</p>
+        
+        <div class="overview-content">
+            <div class="overview-text">
+                <p>Our Web Developer Internship at Cognifyz Technologies is a 6-month immersive program designed for students and recent graduates who are passionate about building the digital future. This isn't your typical internship - you'll be working on real client projects from day one.</p>
+                <br>
+                <p>Throughout the program, you'll rotate through our core development teams, gaining exposure to various aspects of web development including frontend, backend, and DevOps. Each intern is paired with a senior developer mentor who will guide you through challenging projects and help accelerate your learning.</p>
+                <br>
+                <p>The internship includes weekly training workshops, code reviews, and opportunities to contribute to open-source projects. Our goal is to provide you with the skills, experience, and professional network to excel in your tech career.</p>
+                <br>
+                <p><strong>Program Duration:</strong> 6 months (Full-time)</p>
+                <p><strong>Start Dates:</strong> January, June, and September</p>
+                <p><strong>Location:</strong> Remote & On-site options (Bangalore HQ)</p>
+            </div>
+            <div class="overview-image floating">
+                <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Cognifyz Team Collaboration">
+            </div>
+        </div>
+    </section>
+
+    <!-- Highlights Section -->
+    <section id="highlights" class="highlights">
+        <h2 class="section-title">Internship Benefits</h2>
+        <p class="section-subtitle">Why our interns love working at Cognifyz Technologies</p>
+        
+        <div class="benefits-container">
+            <div class="benefit-card">
+                <div class="benefit-icon">
+                    <i class="fas fa-laptop-code"></i>
+                </div>
+                <h3>Real-World Experience</h3>
+                <p>Work on live projects for actual clients, building solutions that make a real impact. No coffee runs here - just meaningful development work.</p>
+            </div>
+            
+            <div class="benefit-card">
+                <div class="benefit-icon">
+                    <i class="fas fa-chalkboard-teacher"></i>
+                </div>
+                <h3>Expert Mentorship</h3>
+                <p>Learn from senior developers with 10+ years of industry experience. Regular 1:1 sessions ensure you're always growing.</p>
+            </div>
+            
+            <div class="benefit-card">
+                <div class="benefit-icon">
+                    <i class="fas fa-network-wired"></i>
+                </div>
+                <h3>Professional Network</h3>
+                <p>Connect with industry leaders, attend tech events, and build relationships that will accelerate your career growth.</p>
+            </div>
+            
+            <div class="benefit-card">
+                <div class="benefit-icon">
+                    <i class="fas fa-certificate"></i>
+                </div>
+                <h3>Career Opportunities</h3>
+                <p>Top performers receive full-time job offers. 85% of our interns transition to permanent roles at Cognifyz or our partner companies.</p>
+            </div>
+            
+            <div class="benefit-card">
+                <div class="benefit-icon">
+                    <i class="fas fa-hand-holding-usd"></i>
+                </div>
+                <h3>Competitive Stipend</h3>
+                <p>Receive a monthly stipend that recognizes your contribution and helps support your learning journey.</p>
+            </div>
+            
+            <div class="benefit-card">
+                <div class="benefit-icon">
+                    <i class="fas fa-tools"></i>
+                </div>
+                <h3>Modern Tech Stack</h3>
+                <p>Work with cutting-edge technologies including React, Node.js, AWS, and more. Access to premium learning resources.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Qualifications Section -->
+    <section id="qualifications" class="qualifications">
+        <h2 class="section-title">Desired Qualifications</h2>
+        <p class="section-subtitle">We're looking for passionate developers with these skills</p>
+        
+        <div class="skills-container">
+            <div class="skill-category">
+                <h3><i class="fas fa-laptop-code"></i> Technical Skills</h3>
+                <ul class="skill-list">
+                    <li>Proficiency in HTML5, CSS3, and JavaScript (ES6+)</li>
+                    <li>Experience with frontend frameworks (React, Angular, or Vue)</li>
+                    <li>Understanding of backend technologies (Node.js, Python, or Java)</li>
+                    <li>Knowledge of databases (SQL or NoSQL)</li>
+                    <li>Familiarity with RESTful APIs</li>
+                    <li>Version control with Git and GitHub</li>
+                    <li>Responsive design principles</li>
+                </ul>
+            </div>
+            
+            <div class="skill-category">
+                <h3><i class="fas fa-lightbulb"></i> Bonus Skills</h3>
+                <ul class="skill-list">
+                    <li>Experience with cloud platforms (AWS, Azure, GCP)</li>
+                    <li>Knowledge of DevOps practices and tools</li>
+                    <li>UI/UX design principles</li>
+                    <li>Testing frameworks (Jest, Mocha, Jasmine)</li>
+                    <li>Progressive Web Apps (PWA)</li>
+                    <li>Serverless architecture</li>
+                    <li>Containerization (Docker, Kubernetes)</li>
+                </ul>
+            </div>
+            
+            <div class="skill-category">
+                <h3><i class="fas fa-user-graduate"></i> Personal Attributes</h3>
+                <ul class="skill-list">
+                    <li>Strong problem-solving abilities</li>
+                    <li>Eagerness to learn new technologies</li>
+                    <li>Excellent communication skills</li>
+                    <li>Ability to work in a team environment</li>
+                    <li>Self-motivated and proactive attitude</li>
+                    <li>Time management and organization skills</li>
+                    <li>Portfolio of personal or academic projects</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="apply">
+        <div class="cta-section">
+            <h2>Ready to Launch Your Developer Career?</h2>
+            <p>Join our next cohort of talented interns and transform your coding skills into professional expertise.</p>
+            <a href="#" class="btn btn-light">Apply Now</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="footer-content">
+            <div class="footer-column">
+                <h3>Cognifyz Technologies</h3>
+                <p>We're a forward-thinking tech company dedicated to building innovative solutions and nurturing the next generation of tech talent.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-column">
+                <h3>Contact Us</h3>
+                <ul class="contact-info">
+                    <li>
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Tech Hub Innovation Center, Bangalore, India 560001</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-phone-alt"></i>
+                        <span>+91 98765 43210</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-envelope"></i>
+                        <span>internships@cognifyz.com</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-clock"></i>
+                        <span>Monday-Friday: 9AM - 6PM</span>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <ul class="contact-info">
+                    <li><a href="#overview" style="color: white; text-decoration: none;">Program Overview</a></li>
+                    <li><a href="#highlights" style="color: white; text-decoration: none;">Internship Benefits</a></li>
+                    <li><a href="#qualifications" style="color: white; text-decoration: none;">Qualifications</a></li>
+                    <li><a href="#apply" style="color: white; text-decoration: none;">Application Process</a></li>
+                    <li><a href="#" style="color: white; text-decoration: none;">FAQs</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="copyright">
+            <p>&copy; 2023 Cognifyz Technologies. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
